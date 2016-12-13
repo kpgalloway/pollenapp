@@ -1,0 +1,22 @@
+from django.db import models
+
+class PollenCounts(models.Model):
+	datetime = models.DateTimeField(null=True)
+	location = models.CharField(max_length=10)
+	alder = models.FloatField(null=True)
+	willow = models.FloatField(null=True)
+	poplar_aspen = models.FloatField(null=True)
+	birch = models.FloatField(null=True)
+	spruce = models.FloatField(null=True)
+	other1_tree= models.FloatField(null=True)
+	other2_tree= models.FloatField(null=True)
+	total_tree= models.FloatField(null=True)
+	grass= models.FloatField(null=True)
+	grass_2= models.FloatField(null=True)
+	total_grass= models.FloatField(null=True)
+	weed= models.FloatField(null=True)
+	other1= models.FloatField(null=True)
+	other2= models.FloatField(null=True)
+	total_pollen= models.FloatField(null=True)
+	mold= models.FloatField(null=True)
+	comments = models.TextField(null=True)
